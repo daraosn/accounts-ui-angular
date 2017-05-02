@@ -1,3 +1,5 @@
+/* global Blaze Template angular */
+
 angular.module('accounts.ui').directive('loginButtons', function() {
   return {
     restrict: 'EA',
@@ -6,5 +8,5 @@ angular.module('accounts.ui').directive('loginButtons', function() {
     link: function(scope, element) {
       Blaze.render(Template.loginButtons, element[0]);
     }
-  }
+  };
 });
